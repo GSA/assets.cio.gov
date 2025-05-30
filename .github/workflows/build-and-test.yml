@@ -1,7 +1,9 @@
 name: Build and test Jekyll USWDS
 
-on: [push]
+permissions:
+  contents: read
 
+on: [push]
 jobs:
   build:
     name: Install, build and test site with pa11y-ci and htmlproofer.
